@@ -18,7 +18,7 @@ class reviewViewPage extends Component {
   }
 
   componentWillMount() {
-    let url = "http://54.180.183.72:8080/acorn/review/list?product_id=" + localStorage.getItem("product_id");
+    let url = "http://localhost:8080/acorn/review/list?product_id=" + localStorage.getItem("product_id");
     axios.get(url)
       .then((ResponseData) => {
         this.setState({
@@ -33,7 +33,7 @@ class reviewViewPage extends Component {
   //삭제
   delete = (review_id) => {
 
-    let url = "http://54.180.183.72:8080/acorn/review/delete?review_id=" + review_id;
+    let url = "http://localhost:8080/acorn/review/delete?review_id=" + review_id;
     axios.post(url)
       .then((ResponseData) => {
       }).catch((error) => {
@@ -89,7 +89,7 @@ class reviewViewPage extends Component {
                     {item.review_star === "5" ? <Review_star_5 /> : ''}
                   </td>
                   <td className="reviewViewPage_td4">
-                    <img src={"http://54.180.183.72:8080/acorn/image/reviewImage/" + item.review_img} alt=''
+                    <img src={"http://localhost:8080/acorn/image/reviewImage/" + item.review_img} alt=''
                       style={{ borderRadius: '20px', width: '100px', height: '100px' }} />
                   </td>
                   <td className="reviewViewPage_td1">

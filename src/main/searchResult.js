@@ -18,7 +18,7 @@ class TestScroller extends React.Component {
 
   //화면 들어오면 검색 결과 가져오기
   componentWillMount() {
-    let url = "http://54.180.183.72:8080/acorn/product/searchProduct?search=" + localStorage.getItem("search");
+    let url = "http://localhost:8080/acorn/product/searchProduct?search=" + localStorage.getItem("search");
     axios.get(url)
       .then((res) => {
         this.setState({
@@ -57,7 +57,7 @@ class TestScroller extends React.Component {
             <div className="cateCake" onClick={this.goTocakeview.bind(this, item.product_id)}>
               <div className="cakeList">
                 <div>
-                  <img src={"http://54.180.183.72:8080/acorn/image/productImage/" + item.product_img}
+                  <img src={"http://localhost:8080/acorn/image/productImage/" + item.product_img}
                     className="thumbnail" alt="" /><br />
                 </div>
                 <strong className="cateTitle" title={item.product_name}>{item.product_name}</strong><br />

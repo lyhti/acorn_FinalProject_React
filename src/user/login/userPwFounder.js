@@ -23,7 +23,7 @@ const UserPwFounder = ({ toggleModal, closeModal }) => {
   const onSend = (x) => {
     x.preventDefault();
 
-    var url = "http://54.180.183.72:8080/acorn/user/selectPass";
+    var url = "http://localhost:8080/acorn/user/selectPass";
 
     axios.post(url,
       {

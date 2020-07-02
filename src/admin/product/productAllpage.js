@@ -21,7 +21,7 @@ class productAllpage extends Component {
     // sessionStorage.setItem("user_id","1");
 
     // 전체 상품 출력
-    let url_allOfProduct = "http://54.180.183.72:8080/acorn/product/list"
+    let url_allOfProduct = "http://localhost:8080/acorn/product/list"
     axios.get(url_allOfProduct)
       .then((ResponseData) => {
         this.setState({
@@ -35,7 +35,7 @@ class productAllpage extends Component {
   productDelete = (product_id) => {
     console.log(product_id);
     // 상품 삭제
-    let url_product_delete = "http://54.180.183.72:8080/acorn/product/delete?product_id=" + product_id;
+    let url_product_delete = "http://localhost:8080/acorn/product/delete?product_id=" + product_id;
     axios.post(url_product_delete)
       .then((res) => {
         this.setState(

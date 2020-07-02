@@ -70,7 +70,7 @@ class WishList extends Component {
         <td className="wishlist_cont_left">
           <div className="pick_add_cont">
             <span className="pick_add_img">
-              <img src={"http://54.180.183.72:8080/acorn/image/productImage/" + this.props.data.product_img} alt="" />
+              <img src={"http://localhost:8080/acorn/image/productImage/" + this.props.data.product_img} alt="" />
             </span>
             <div className="pick_add_info">
               <em>{this.props.data.product_name}</em>

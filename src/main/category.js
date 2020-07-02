@@ -18,7 +18,7 @@ class category extends Component {
    
 	//메인에서 클릭한 카테고리(빵, 앙금, 마카롱, 슈가)의 케이크 목록이 나옴
 	componentWillMount(){
-		const url = "http://54.180.183.72:8080/acorn/product/category?product_category="+localStorage.getItem("category");
+		const url = "http://localhost:8080/acorn/product/category?product_category="+localStorage.getItem("category");
 		axios.get(url)
 			.then((res)=>{
 				this.setState({
@@ -59,7 +59,7 @@ class category extends Component {
 								<div className="cateCake" onClick={this.goTocakeview.bind(this,item.product_id)}>
 									<div className="cakeList">
 										<div>
-											<img src={"http://54.180.183.72:8080/acorn/image/productImage/" + item.product_img} 
+											<img src={"http://localhost:8080/acorn/image/productImage/" + item.product_img} 
 												className="thumbnail" alt=""/><br/>
 										</div>
 											<strong className="cateTitle"title={item.product_name}>{item.product_name}</strong><br/>

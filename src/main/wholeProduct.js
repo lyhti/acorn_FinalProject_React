@@ -105,7 +105,7 @@ function WholeProductPage({ history }) {
 
   useEffect(() => {
     //최신순 리스트 뽑아오기 
-    const url_newproduct = "http://54.180.183.72:8080/acorn/product/newList";
+    const url_newproduct = "http://localhost:8080/acorn/product/newList";
     axios.get(url_newproduct)
       .then((res) => {
         setNewproduct(res.data);
@@ -114,7 +114,7 @@ function WholeProductPage({ history }) {
       });
 
     //가격 높은순 리스트 뽑아오기 
-    const url_ProductPriceUp = "http://54.180.183.72:8080/acorn/product/priceUpList";
+    const url_ProductPriceUp = "http://localhost:8080/acorn/product/priceUpList";
     axios.get(url_ProductPriceUp)
       .then((res) => {
         setProductPriceUp(res.data);
@@ -123,7 +123,7 @@ function WholeProductPage({ history }) {
       });
 
     //가격 낮은순 리스트 뽑아오기 
-    const url_ProductPriceDown = "http://54.180.183.72:8080/acorn/product/priceDownList";
+    const url_ProductPriceDown = "http://localhost:8080/acorn/product/priceDownList";
     axios.get(url_ProductPriceDown)
       .then((res) => {
         setproductPriceDown(res.data);
@@ -132,7 +132,7 @@ function WholeProductPage({ history }) {
       });
 
     //판매량 높은순 리스트 뽑아오기 
-    const url_ProductCount = "http://54.180.183.72:8080/acorn/product/countList";
+    const url_ProductCount = "http://localhost:8080/acorn/product/countList";
     axios.get(url_ProductCount)
       .then((res) => {
         setProductCount(res.data);
@@ -141,7 +141,7 @@ function WholeProductPage({ history }) {
       });
 
     //리뷰 많은순 리스트 뽑아오기 
-    const url_ProductPriceCount = "http://54.180.183.72:8080/acorn/product/countReview";
+    const url_ProductPriceCount = "http://localhost:8080/acorn/product/countReview";
     axios.get(url_ProductPriceCount)
       .then((res) => {
         setCountReview(res.data);
@@ -171,7 +171,7 @@ function WholeProductPage({ history }) {
         {newproduct.slice(0, 5).map((item, idx) => (
           <div className={classes.imgDiv} style={{ width: '230px' }}>
             <div>
-              <img src={"http://54.180.183.72:8080/acorn/image/productImage/" + item.product_img}
+              <img src={"http://localhost:8080/acorn/image/productImage/" + item.product_img}
                 className={classes.thumbnail} alt="" onClick={() => {
                   localStorage.setItem("product_id", item.product_id);
                   setTimeout(() => {
@@ -220,7 +220,7 @@ function WholeProductPage({ history }) {
         {productPriceUp.slice(0, 5).map((item, idx) => (
           <div className={classes.imgDiv} style={{ width: '230px' }}>
             <div>
-              <img src={"http://54.180.183.72:8080/acorn/image/productImage/" + item.product_img} className={classes.thumbnail} alt="" onClick={() => {
+              <img src={"http://localhost:8080/acorn/image/productImage/" + item.product_img} className={classes.thumbnail} alt="" onClick={() => {
                 localStorage.setItem("product_id", item.product_id);
                 setTimeout(() => {
                   history.push("Mo_kyeonny/cakeview")
@@ -267,7 +267,7 @@ function WholeProductPage({ history }) {
         {productPriceDown.slice(0, 5).map((item, idx) => (
           <div className={classes.imgDiv} style={{ width: '230px' }}>
             <div>
-              <img src={"http://54.180.183.72:8080/acorn/image/productImage/" + item.product_img} className={classes.thumbnail} alt="" onClick={() => {
+              <img src={"http://localhost:8080/acorn/image/productImage/" + item.product_img} className={classes.thumbnail} alt="" onClick={() => {
                 localStorage.setItem("product_id", item.product_id);
                 setTimeout(() => {
                   history.push("Mo_kyeonny/cakeview")
@@ -311,7 +311,7 @@ function WholeProductPage({ history }) {
         {productCount.slice(0, 5).map((item, idx) => (
           <div className={classes.imgDiv} style={{ width: '230px' }}>
             <div>
-              <img src={"http://54.180.183.72:8080/acorn/image/productImage/" + item.product_img} className={classes.thumbnail} alt="" onClick={() => {
+              <img src={"http://localhost:8080/acorn/image/productImage/" + item.product_img} className={classes.thumbnail} alt="" onClick={() => {
                 localStorage.setItem("product_id", item.product_id);
                 setTimeout(() => {
                   history.push("Mo_kyeonny/cakeview")
@@ -358,7 +358,7 @@ function WholeProductPage({ history }) {
         {countReview.slice(0, 5).map((item, idx) => (
           <div className={classes.imgDiv} style={{ width: '230px' }}>
             <div>
-              <img src={"http://54.180.183.72:8080/acorn/image/productImage/" + item.product_img} className={classes.thumbnail} alt="" onClick={() => {
+              <img src={"http://localhost:8080/acorn/image/productImage/" + item.product_img} className={classes.thumbnail} alt="" onClick={() => {
                 localStorage.setItem("product_id", item.product_id);
                 setTimeout(() => {
                   history.push("Mo_kyeonny/cakeview")

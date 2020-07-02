@@ -71,7 +71,7 @@ class cakeView extends Component {
   {
     console.log("Product_id" + localStorage.getItem("product_id"))
 
-    let url = "http://54.180.183.72:8080/acorn/product/getData?product_id=" + localStorage.getItem("product_id");
+    let url = "http://localhost:8080/acorn/product/getData?product_id=" + localStorage.getItem("product_id");
     axios.get(url).then((ResponseData) => {
       console.log(this.state.product_img)
       this.setState({
@@ -90,12 +90,12 @@ class cakeView extends Component {
       console.log("list error:" + error);
     });
 
-    let url2 = "http://54.180.183.72:8080/acorn/product/recentAdd";
+    let url2 = "http://localhost:8080/acorn/product/recentAdd";
     axios.post(url2, { user_id: localStorage.getItem("user_id"), product_id: localStorage.getItem("product_id") }).then((res) => { }).catch((error) => {
       console.log("최근본 목록 추가에러:" + error);
     });
 
-    let url3 = "http://54.180.183.72:8080/acorn/bookmark/stateOfBookMark?user_id=" + localStorage.getItem("user_id") + "&product_id=" + localStorage.getItem("product_id");
+    let url3 = "http://localhost:8080/acorn/bookmark/stateOfBookMark?user_id=" + localStorage.getItem("user_id") + "&product_id=" + localStorage.getItem("product_id");
     axios.post(url3).then((res) => {
       this.setState({
         bookmark: res.data
@@ -109,7 +109,7 @@ class cakeView extends Component {
   buying = () => {
     //날짜가 지정안되어있으면 구매하기 실행 안된다
     if (this.state.buy_pick_date_type === true) {
-      let url = "http://54.180.183.72:8080/acorn/buy/insertOfBuy";
+      let url = "http://localhost:8080/acorn/buy/insertOfBuy";
 
       //아래 방식은 setState를 우선순위로 실행시키고 이후에 ()=>axios를 실행시킴으로써 axios가 실행될 때 변경된 state값이 들어가게 하는 문법
       this.setState(
@@ -147,9 +147,9 @@ class cakeView extends Component {
     //로그인 안하면 북마크 눌럿을 때 로그인 화면으로 감
     if (localStorage.getItem("user_id") > 1) {
       if (this.state.bookmark === false) {
-        let url = "http://54.180.183.72:8080/acorn/bookmark/insertOfBookMark";
+        let url = "http://localhost:8080/acorn/bookmark/insertOfBookMark";
         axios.post(url, { user_id: localStorage.getItem("user_id"), product_id: localStorage.getItem("product_id") }).then((res) => {
-          let url3 = "http://54.180.183.72:8080/acorn/bookmark/stateOfBookMark?user_id=" + localStorage.getItem("user_id") + "&product_id=" + localStorage.getItem("product_id");
+          let url3 = "http://localhost:8080/acorn/bookmark/stateOfBookMark?user_id=" + localStorage.getItem("user_id") + "&product_id=" + localStorage.getItem("product_id");
           axios.post(url3).then((res) => {
             this.setState({
               bookmark: res.data
@@ -162,9 +162,9 @@ class cakeView extends Component {
         });
 
       } else {
-        let url = "http://54.180.183.72:8080/acorn/bookmark/deleteOfBookMark?user_id=" + localStorage.getItem("user_id") + "&product_id=" + localStorage.getItem("product_id");
+        let url = "http://localhost:8080/acorn/bookmark/deleteOfBookMark?user_id=" + localStorage.getItem("user_id") + "&product_id=" + localStorage.getItem("product_id");
         axios.delete(url).then((res) => {
-          let url3 = "http://54.180.183.72:8080/acorn/bookmark/stateOfBookMark?user_id=" + localStorage.getItem("user_id") + "&product_id=" + localStorage.getItem("product_id");
+          let url3 = "http://localhost:8080/acorn/bookmark/stateOfBookMark?user_id=" + localStorage.getItem("user_id") + "&product_id=" + localStorage.getItem("product_id");
           axios.post(url3).then((res) => {
             this.setState({
               bookmark: res.data
@@ -305,7 +305,7 @@ class cakeView extends Component {
     return (
       <div>
         <div style={{ float: 'left', textAlign: 'center', marginLeft: '24%', marginTop: '3%' }} >
-          <img src={"http://54.180.183.72:8080/acorn/image/productImage/" + this.state.product_img} alt='' className="cakeview_img" />
+          <img src={"http://localhost:8080/acorn/image/productImage/" + this.state.product_img} alt='' className="cakeview_img" />
           {'\u00A0'}
         </div>
 

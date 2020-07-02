@@ -78,8 +78,8 @@ function ProductOfferPage({ history }, props) {
   //onSubmit 함수
   const onSubmit = (e) => {
     e.preventDefault();
-    const imgUploadUrl = "http://54.180.183.72:8080/acorn/product/productFile";
-    const productAddUrl = "http://54.180.183.72:8080/acorn/product/add";
+    const imgUploadUrl = "http://localhost:8080/acorn/product/productFile";
+    const productAddUrl = "http://localhost:8080/acorn/product/add";
 
     const formData = new FormData();
     formData.append('uploadFile', cakeImg);

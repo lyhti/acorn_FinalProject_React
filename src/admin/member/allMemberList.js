@@ -14,7 +14,7 @@ class allMemberList extends Component {
 
   //목록 출력하는 list함수 
   list = () => {
-    let url = "http://54.180.183.72:8080/acorn/user/list";
+    let url = "http://localhost:8080/acorn/user/list";
     axios.post(url)
       .then((ResponseData) => {
         //url로 받은 데이타 state변수에 넣기
@@ -36,7 +36,7 @@ class allMemberList extends Component {
   onMemoDelete = (user_id) => {
     if (window.confirm("정말 탈퇴시키겠습니까?") === true) {
       console.log("true");
-      let url = "http://54.180.183.72:8080/acorn/user/delete?user_id=" + user_id;
+      let url = "http://localhost:8080/acorn/user/delete?user_id=" + user_id;
       axios.delete(url).then((res) => {
         //목록 다시 출력
         this.list();

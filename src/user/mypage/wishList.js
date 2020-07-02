@@ -29,7 +29,7 @@ class wishList extends Component {
 
   //데이타 가져오기
   list = () => {
-    let url = "http://54.180.183.72:8080/acorn/bookmark/selectOfBookMark?user_id=" + localStorage.getItem("user_id");
+    let url = "http://localhost:8080/acorn/bookmark/selectOfBookMark?user_id=" + localStorage.getItem("user_id");
     axios.post(url)
       .then((ResponseData) => {
         console.log(ResponseData.data)
@@ -43,7 +43,7 @@ class wishList extends Component {
 
   //북마크 삭제하기
   deleteOnedata = (product_id) => {
-    let url = "http://54.180.183.72:8080/acorn/bookmark/deleteOfBookMark?user_id=" + localStorage.getItem("user_id") + "&product_id=" + product_id;
+    let url = "http://localhost:8080/acorn/bookmark/deleteOfBookMark?user_id=" + localStorage.getItem("user_id") + "&product_id=" + product_id;
     axios.delete(url)
       .then(res => {
       }
@@ -55,7 +55,7 @@ class wishList extends Component {
 
   //전체삭제하기
   deleteAll = () => {
-    let url = "http://54.180.183.72:8080/acorn/bookmark/delefeOfBookMarkAll?user_id=" + localStorage.getItem("user_id") + "&bookmarks=" + this.state.options
+    let url = "http://localhost:8080/acorn/bookmark/delefeOfBookMarkAll?user_id=" + localStorage.getItem("user_id") + "&bookmarks=" + this.state.options
     axios.post(url)
       .then(res => {
       }
@@ -149,7 +149,7 @@ class wishList extends Component {
           <td className="wishlist_cont_left">
             <div className="pick_add_cont">
               <span className="pick_add_img" onClick={this.GoToCakeview.bind(this, item.product_id)} style={{cursor:'pointer'}}>
-                <img src={"http://54.180.183.72:8080/acorn/image/productImage/" + item.product_img} alt="" />
+                <img src={"http://localhost:8080/acorn/image/productImage/" + item.product_img} alt="" />
               </span>
               <div className="pick_add_info">
                 <em>{item.product_name}</em>

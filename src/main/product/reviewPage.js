@@ -28,7 +28,7 @@ class reviewPage extends Component {
 
 
   componentWillMount() {
-    let url = "http://54.180.183.72:8080/acorn/buy/reviewUser?product_id=" + localStorage.getItem("product_id");
+    let url = "http://localhost:8080/acorn/buy/reviewUser?product_id=" + localStorage.getItem("product_id");
     axios.post(url)
       .then((ResponseData) => {
         this.setState({
@@ -95,7 +95,7 @@ class reviewPage extends Component {
 
     axios({
       method: 'post',
-      url: "http://54.180.183.72:8080/acorn/review/reviewFile?user_id=" + localStorage.getItem("user_id") + "&product_id=" + localStorage.getItem("product_id"),
+      url: "http://localhost:8080/acorn/review/reviewFile?user_id=" + localStorage.getItem("user_id") + "&product_id=" + localStorage.getItem("product_id"),
       data: reviewFile,
       headers: { 'Content-Type': 'multipart/form-data' }
     }).then((res) => {
@@ -122,7 +122,7 @@ class reviewPage extends Component {
       if (this.state.star_point === '') {
         alert("별점을 입력해주세요.")
       } else {
-        let url = "http://54.180.183.72:8080/acorn/reivew/add";
+        let url = "http://localhost:8080/acorn/reivew/add";
         axios.post(url,
           {
             user_id: localStorage.getItem("user_id"),

@@ -29,7 +29,7 @@ class productModifyPage extends Component {
   {
     console.log(localStorage.getItem("product_id"))
     // product_id 로 선택 된 상품 정보 페이지 시작하자마자 불러옴.
-    let url_product = "http://54.180.183.72:8080/acorn/product/getData?product_id=" + localStorage.getItem("product_id");
+    let url_product = "http://localhost:8080/acorn/product/getData?product_id=" + localStorage.getItem("product_id");
     axios.get(url_product)
       .then((res) => {
         this.setState({
@@ -86,7 +86,7 @@ class productModifyPage extends Component {
       axios(
         {
           method: 'post',
-          url: "http://54.180.183.72:8080/acorn/product/update",
+          url: "http://localhost:8080/acorn/product/update",
           data:
           {
             product_id: this.state.product_id,
@@ -106,13 +106,13 @@ class productModifyPage extends Component {
       axios(
         {
           method: 'post',
-          url: "http://54.180.183.72:8080/acorn/product/productFile",
+          url: "http://localhost:8080/acorn/product/productFile",
           data: uploadFile,
           headers: { 'Content-Type': 'multipart/form-data' }
         }).then((res) =>
         {
           console.log("성공")
-          let url_product = "http://54.180.183.72:8080/acorn/product/update"
+          let url_product = "http://localhost:8080/acorn/product/update"
           axios.post(url_product, 
             {
               product_id: this.state.product_id,
@@ -141,7 +141,7 @@ class productModifyPage extends Component {
 
 
   render() {
-    const url = "http://54.180.183.72:8080/acorn/image/productImage/";
+    const url = "http://localhost:8080/acorn/image/productImage/";
     return (
       <div className="User_mypage_content">
         <div noValidate autoComplete="off">

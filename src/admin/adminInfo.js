@@ -19,7 +19,7 @@ class adminInfo extends Component {
 
   componentWillMount() {
     // 유저 정보
-    let url_user = "http://54.180.183.72:8080/acorn/user/getData?user_id=" + localStorage.getItem("user_id");
+    let url_user = "http://localhost:8080/acorn/user/getData?user_id=" + localStorage.getItem("user_id");
     axios.post(url_user)
       .then((ResponseData) => {
         this.setState({
@@ -29,7 +29,7 @@ class adminInfo extends Component {
       });
 
     // 총 상품 등록 수
-    let url_product_total_count = "http://54.180.183.72:8080/acorn/product/alllist"
+    let url_product_total_count = "http://localhost:8080/acorn/product/alllist"
     axios.post(url_product_total_count)
       .then((ResponseData) => {
         this.setState({
@@ -39,7 +39,7 @@ class adminInfo extends Component {
       });
 
     // 총 매출 금액
-    let url_product_total_price = "http://54.180.183.72:8080/acorn/product/allprice"
+    let url_product_total_price = "http://localhost:8080/acorn/product/allprice"
     axios.post(url_product_total_price)
       .then((ResponseData) => {
         this.setState({
@@ -49,7 +49,7 @@ class adminInfo extends Component {
       });
 
     //최근 주문 정보
-    let url_recentbuy = "http://54.180.183.72:8080/acorn/product/noworder?user_id=" + localStorage.getItem("user_id");
+    let url_recentbuy = "http://localhost:8080/acorn/product/noworder?user_id=" + localStorage.getItem("user_id");
     axios.get(url_recentbuy)
       .then((ResponseData) => {
         this.setState({
@@ -59,7 +59,7 @@ class adminInfo extends Component {
       });
 
     // 지난 주문 내역
-    let url_orderlist = "http://54.180.183.72:8080/acorn/product/orderlist?user_id=" + localStorage.getItem("user_id");
+    let url_orderlist = "http://localhost:8080/acorn/product/orderlist?user_id=" + localStorage.getItem("user_id");
     axios.get(url_orderlist)
       .then((ResponseData) => {
         this.setState({

@@ -15,7 +15,7 @@ class unregister extends Component {
   }
   goodbye = (e) => {
     e.preventDefault();
-    let url = "http://54.180.183.72:8080/acorn/user/pass?user_id=" + localStorage.getItem("user_id") + "&user_pass=" + this.state.user_pass;
+    let url = "http://localhost:8080/acorn/user/pass?user_id=" + localStorage.getItem("user_id") + "&user_pass=" + this.state.user_pass;
     axios.post(url).then((ResponseData) => {
       console.log("ResponseData.data:" + ResponseData.data);
       this.setState({
@@ -29,7 +29,7 @@ class unregister extends Component {
       if (this.state.passtruefalse) {
         if (window.confirm("정말 탈퇴하시겠습니까?") === true) {
           console.log("true");
-          let url = "http://54.180.183.72:8080/acorn/user/delete?user_id=" + localStorage.getItem("user_id");
+          let url = "http://localhost:8080/acorn/user/delete?user_id=" + localStorage.getItem("user_id");
           axios.delete(url).then((res) => {
           }).catch(err => {
           })

@@ -31,7 +31,7 @@ class userModify extends Component {
   list = () => {
 
 
-    let url = "http://54.180.183.72:8080/acorn/user/pass?user_id=" + localStorage.getItem("user_id") + "&user_pass=" + this.state.findPassword;
+    let url = "http://localhost:8080/acorn/user/pass?user_id=" + localStorage.getItem("user_id") + "&user_pass=" + this.state.findPassword;
     axios.post(url)
       .then((ResponseData) => {
         console.log(ResponseData.data)
@@ -55,7 +55,7 @@ class userModify extends Component {
   componentWillMount() {
     window.scrollTo(0, 0)
     // user_id 확인
-    let url_recentbuy = "http://54.180.183.72:8080/acorn/user/getData?user_id=" + localStorage.getItem("user_id");
+    let url_recentbuy = "http://localhost:8080/acorn/user/getData?user_id=" + localStorage.getItem("user_id");
     axios.post(url_recentbuy)
       .then((ResponseData) => {
         this.setState({

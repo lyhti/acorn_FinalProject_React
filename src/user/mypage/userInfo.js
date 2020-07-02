@@ -20,7 +20,7 @@ class userInfo extends Component {
 
 
     //유저 정보
-    let url_user = "http://54.180.183.72:8080/acorn/user/getData?user_id=" + localStorage.getItem("user_id");
+    let url_user = "http://localhost:8080/acorn/user/getData?user_id=" + localStorage.getItem("user_id");
     axios.post(url_user)
       .then((ResponseData) => {
         this.setState({
@@ -31,7 +31,7 @@ class userInfo extends Component {
       });
 
     //총 구매 갯수
-    let url_totalcount = "http://54.180.183.72:8080/acorn/buy/selectOfTotalBuyCount?user_id=" + localStorage.getItem("user_id");
+    let url_totalcount = "http://localhost:8080/acorn/buy/selectOfTotalBuyCount?user_id=" + localStorage.getItem("user_id");
     axios.get(url_totalcount)
       .then((ResponseData) => {
         this.setState({
@@ -41,7 +41,7 @@ class userInfo extends Component {
       });
 
     //총 구매 금액
-    let url_totalprice = "http://54.180.183.72:8080/acorn/buy/selectOfTotalBuyPrice?user_id=" + localStorage.getItem("user_id");
+    let url_totalprice = "http://localhost:8080/acorn/buy/selectOfTotalBuyPrice?user_id=" + localStorage.getItem("user_id");
     axios.get(url_totalprice)
       .then((ResponseData) => {
         this.setState({

@@ -16,7 +16,7 @@ class adminOrderListTable extends Component {
 
 
   componentWillMount() {
-    let url_buy = "http://54.180.183.72:8080/acorn/product/noworder_selectOfBuyOption?buy_id=" + this.props.data.buy_id;
+    let url_buy = "http://localhost:8080/acorn/product/noworder_selectOfBuyOption?buy_id=" + this.props.data.buy_id;
     axios.post(url_buy)
       .then((ResponseData) => {
         console.log(ResponseData.data)
@@ -55,7 +55,7 @@ class adminOrderListTable extends Component {
         <td className="noworder_product_cont">
           <div className="pick_add_cont">
             <span className="pick_add_img" onClick={this.cakeview} style={{cursor:'pointer'}}>
-              <img src={"http://54.180.183.72:8080/acorn/image/productImage/" + this.props.data.product_img}
+              <img src={"http://localhost:8080/acorn/image/productImage/" + this.props.data.product_img}
                 alt="" />
             </span>
             <div className="pick_add_info">

@@ -80,7 +80,7 @@ class UserJoin extends Component {
       let submit = new FormData();
       submit.append("user_email", this.state.user_email);
 
-      let url = "http://54.180.183.72:8080/acorn/user/checkEmail";
+      let url = "http://localhost:8080/acorn/user/checkEmail";
       axios.post(url, submit).then(res => {
         this.setState({
           emailCheck: res.data
@@ -131,7 +131,7 @@ class UserJoin extends Component {
       && this.state.isValidHp === true && (this.state.emailCheck === false || this.state.emailCheck === true)) {
       e.preventDefault();
 
-      let url = "http://54.180.183.72:8080/acorn/user/add";
+      let url = "http://localhost:8080/acorn/user/add";
       let uploadData = this.state;
       console.log(uploadData);
 

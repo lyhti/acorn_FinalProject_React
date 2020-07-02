@@ -41,7 +41,7 @@ class productAllpageTable extends Component {
         <td className="td_left">
           <div className="pick_add_cont">
             <span className="pick_add_img" onClick={this.cakeview} style={{cursor:'pointer'}}>
-              <img src={"http://54.180.183.72:8080/acorn/image/productImage/" + this.props.data.product_img} alt="" />
+              <img src={"http://localhost:8080/acorn/image/productImage/" + this.props.data.product_img} alt="" />
             </span>
             <div className="pick_add_info">
               <em>

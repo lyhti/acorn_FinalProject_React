@@ -18,7 +18,7 @@ class recentHistoryTable extends Component {
       <li>
         <div className="item_cont">
           <div className="item_photo_box" style={{cursor:'pointer'}}>
-            <img src={"http://54.180.183.72:8080/acorn/image/productImage/" + this.props.data.product_img} alt=""
+            <img src={"http://localhost:8080/acorn/image/productImage/" + this.props.data.product_img} alt=""
               onClick={this.pageMove} />
           </div>
           <div className="item_info_cont">

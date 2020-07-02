@@ -54,7 +54,7 @@ class userPwChange extends Component {
 
   onSave = (e) => {
     e.preventDefault();
-    let url = "http://54.180.183.72:8080/acorn/user/pass?user_id=" + localStorage.getItem("user_id") + "&user_pass=" + this.state.user_pass;
+    let url = "http://localhost:8080/acorn/user/pass?user_id=" + localStorage.getItem("user_id") + "&user_pass=" + this.state.user_pass;
     axios.post(url)
       .then((ResponseData) => {
         this.setState({
@@ -66,7 +66,7 @@ class userPwChange extends Component {
 
     setTimeout(() => {
       if (this.state.passtruefalse) {
-        let url = "http://54.180.183.72:8080/acorn/user/updatePass";
+        let url = "http://localhost:8080/acorn/user/updatePass";
 
         axios.post(url, { user_pass: this.state.newPass, user_id: localStorage.getItem("user_id") }).then(res => {
           this.setState({

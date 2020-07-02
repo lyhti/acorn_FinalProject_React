@@ -18,7 +18,7 @@ class wholeProductMore extends React.Component {
 
     localStorage.getItem("moreItems")
 
-    let url_newproduct = "http://54.180.183.72:8080/acorn/product/" + localStorage.getItem("moreItems");
+    let url_newproduct = "http://localhost:8080/acorn/product/" + localStorage.getItem("moreItems");
     axios.get(url_newproduct)
       .then((res) => {
         this.setState({
@@ -55,7 +55,7 @@ class wholeProductMore extends React.Component {
             <div className="cateCake" onClick={this.goTocakeview.bind(this, item.product_id)}>
               <div className="cakeList">
                 <div>
-                  <img src={"http://54.180.183.72:8080/acorn/image/productImage/" + item.product_img}
+                  <img src={"http://localhost:8080/acorn/image/productImage/" + item.product_img}
                     className="thumbnail" alt="" /><br />
                 </div>
                 <strong className="cateTitle" title={item.product_name}>{item.product_name}</strong><br />

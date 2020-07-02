@@ -19,7 +19,7 @@ class nowOrder extends Component {
   componentWillMount() {
     window.scrollTo(0, 0)
     //최근 주문 정보
-    let url_recentbuy = "http://54.180.183.72:8080/acorn/product/noworder?user_id=" + localStorage.getItem("user_id");
+    let url_recentbuy = "http://localhost:8080/acorn/product/noworder?user_id=" + localStorage.getItem("user_id");
     axios.get(url_recentbuy)
       .then((ResponseData) => {
         this.setState({

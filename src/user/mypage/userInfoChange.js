@@ -45,7 +45,7 @@ class userInfoChange extends Component {
     } else if (this.state.isValidHp === true) {
       e.preventDefault();
 
-      let url = "http://54.180.183.72:8080/acorn/user/update";
+      let url = "http://localhost:8080/acorn/user/update";
       let uploadData = this.state;
       console.log(uploadData);
 
@@ -67,7 +67,7 @@ class userInfoChange extends Component {
     })
 
 
-    let url = "http://54.180.183.72:8080/acorn/user/updateform?user_id=" + localStorage.getItem("user_id");
+    let url = "http://localhost:8080/acorn/user/updateform?user_id=" + localStorage.getItem("user_id");
     axios.get(url)
       .then((ResponseData) => {
         this.setState({

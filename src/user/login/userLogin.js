@@ -45,7 +45,7 @@ class userLogin extends Component {
 
     onLogin = async(x) => {
     x.preventDefault();
-    var url = "http://54.180.183.72:8080/acorn/login/user";
+    var url = "http://localhost:8080/acorn/login/user";
 
     let f = new FormData();
     f.append('user_email', this.state.user_email);

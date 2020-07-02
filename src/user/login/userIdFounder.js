@@ -49,7 +49,7 @@ const UserIdFounder = ({ toggleModal, closeModal }) => {
 
     x.preventDefault();
 
-    var url = "http://54.180.183.72:8080/acorn/user/selectEmail";
+    var url = "http://localhost:8080/acorn/user/selectEmail";
 
     axios.post(url,
       {

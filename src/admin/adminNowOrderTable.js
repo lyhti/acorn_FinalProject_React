@@ -17,7 +17,7 @@ class adminNowOrderTable extends Component {
   orderBuyState = (e) => {
     console.log(e.target.value);
 
-    let url = "http://54.180.183.72:8080/acorn/buy/updateOfBuyOrderType?buy_id=" + e.target.value;
+    let url = "http://localhost:8080/acorn/buy/updateOfBuyOrderType?buy_id=" + e.target.value;
     axios.post(url)
       .then((ResponseData) => {
         this.setState({
@@ -31,7 +31,7 @@ class adminNowOrderTable extends Component {
   // 주문취소하기.
   orderBuyCancle = (e) => {
     console.log(e.target.value);
-    let url = "http://54.180.183.72:8080/acorn/buy/deleteOrderbuy?buy_id=" + e.target.value;
+    let url = "http://localhost:8080/acorn/buy/deleteOrderbuy?buy_id=" + e.target.value;
     axios.post(url)
       .then((ResponseData) => {
         this.setState({
@@ -44,7 +44,7 @@ class adminNowOrderTable extends Component {
 
   // 상품 옵션 가져오기.
   componentWillMount() {
-    let url_buy = "http://54.180.183.72:8080/acorn/product/noworder_selectOfBuyOption?buy_id=" + this.props.data.buy_id;
+    let url_buy = "http://localhost:8080/acorn/product/noworder_selectOfBuyOption?buy_id=" + this.props.data.buy_id;
     axios.post(url_buy)
       .then((ResponseData) => {
         console.log(ResponseData.data)
@@ -89,7 +89,7 @@ class adminNowOrderTable extends Component {
         <td className="noworder_product_cont">
           <div className="pick_add_cont">
             <span className="pick_add_img" onClick={this.cakeview} style={{cursor:'pointer'}}>
-              <img src={"http://54.180.183.72:8080/acorn/image/productImage/" + this.props.data.product_img}
+              <img src={"http://localhost:8080/acorn/image/productImage/" + this.props.data.product_img}
                 alt="" />
             </span>
             <div className="pick_add_info">

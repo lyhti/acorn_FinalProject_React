@@ -39,7 +39,7 @@ class orderSuccess extends Component {
 
   componentWillMount() {
 
-    let url_buy = "http://54.180.183.72:8080/acorn/buy/selectOfBuyOneData?buy_id=" + localStorage.getItem("buy_id");
+    let url_buy = "http://localhost:8080/acorn/buy/selectOfBuyOneData?buy_id=" + localStorage.getItem("buy_id");
     axios.post(url_buy)
       .then((ResponseData) => {
         this.setState({
@@ -56,7 +56,7 @@ class orderSuccess extends Component {
       }).catch((error) => {
       });
 
-    let url_product = "http://54.180.183.72:8080/acorn/product/getData?product_id=" + localStorage.getItem("product_id");
+    let url_product = "http://localhost:8080/acorn/product/getData?product_id=" + localStorage.getItem("product_id");
     axios.get(url_product)
       .then((ResponseData) => {
         this.setState({
@@ -68,7 +68,7 @@ class orderSuccess extends Component {
       }).catch((error) => {
       });
 
-    let url_user = "http://54.180.183.72:8080/acorn/user/getData?user_id=" + localStorage.getItem("user_id");
+    let url_user = "http://localhost:8080/acorn/user/getData?user_id=" + localStorage.getItem("user_id");
     axios.post(url_user)
       .then((ResponseData) => {
         this.setState({

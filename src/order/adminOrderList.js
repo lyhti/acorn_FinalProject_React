@@ -28,7 +28,7 @@ class adminOrderList extends Component {
 
   daysearchbtn = (e) => {
     // 버튼 클릭 시 spring에서 계산 된 날짜 가지고 오기.
-    let url_time = "http://54.180.183.72:8080/acorn/buy/time?time=" + e.target.value
+    let url_time = "http://localhost:8080/acorn/buy/time?time=" + e.target.value
     axios.post(url_time)
       .then((ResponseData) => {
         this.setState({
@@ -53,7 +53,7 @@ class adminOrderList extends Component {
     console.log(this.state.endday);
 
     // 날짜 별 조회
-    let url_datesearch = "http://54.180.183.72:8080/acorn/product/dateorderlist?startday=" + this.state.startday + "&endday=" + this.state.endday + "&user_id=" + localStorage.getItem("user_id")
+    let url_datesearch = "http://localhost:8080/acorn/product/dateorderlist?startday=" + this.state.startday + "&endday=" + this.state.endday + "&user_id=" + localStorage.getItem("user_id")
     axios.post(url_datesearch,
       { startday: this.state.startday, endday: this.state.endday }
     )
@@ -70,7 +70,7 @@ class adminOrderList extends Component {
     // sessionStorage.setItem("user_id","1");
 
     // 지난 주문 내역
-    let url_orderlist = "http://54.180.183.72:8080/acorn/product/orderlist?user_id=" + localStorage.getItem("user_id");
+    let url_orderlist = "http://localhost:8080/acorn/product/orderlist?user_id=" + localStorage.getItem("user_id");
     axios.get(url_orderlist)
       .then((ResponseData) => {
         this.setState({

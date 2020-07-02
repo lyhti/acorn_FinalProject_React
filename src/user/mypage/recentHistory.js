@@ -18,7 +18,7 @@ class recentHistory extends Component {
 
   componentWillMount() {
     //최근 주문 정보
-    let url_recentbuy = "http://54.180.183.72:8080/acorn/buy/selectOfRecentBuyList?user_id=" + localStorage.getItem("user_id");
+    let url_recentbuy = "http://localhost:8080/acorn/buy/selectOfRecentBuyList?user_id=" + localStorage.getItem("user_id");
     axios.get(url_recentbuy)
       .then((ResponseData) => {
         this.setState({
@@ -28,7 +28,7 @@ class recentHistory extends Component {
       });
 
     //최근 본 상품
-    let url_recentview = "http://54.180.183.72:8080/acorn/product/recentList?user_id=" + localStorage.getItem("user_id");
+    let url_recentview = "http://localhost:8080/acorn/product/recentList?user_id=" + localStorage.getItem("user_id");
     axios.get(url_recentview)
       .then((ResponseData) => {
         this.setState({
@@ -38,7 +38,7 @@ class recentHistory extends Component {
       });
 
     //유저 정보
-    let url_user = "http://54.180.183.72:8080/acorn/user/getData?user_id=" + localStorage.getItem("user_id");
+    let url_user = "http://localhost:8080/acorn/user/getData?user_id=" + localStorage.getItem("user_id");
     axios.post(url_user)
       .then((ResponseData) => {
         this.setState({

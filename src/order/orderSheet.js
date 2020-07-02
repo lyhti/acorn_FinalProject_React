@@ -27,7 +27,7 @@ class orderSheet extends Component {
 
   componentWillMount() {
     //최근 주문 정보
-    let url = "http://54.180.183.72:8080/acorn/product/ordersheetlist?buy_order_id=" + localStorage.getItem("buy_order_id");
+    let url = "http://localhost:8080/acorn/product/ordersheetlist?buy_order_id=" + localStorage.getItem("buy_order_id");
     axios.get(url)
       .then((ResponseData) => {
         this.setState({
@@ -36,7 +36,7 @@ class orderSheet extends Component {
       }).catch((error) => {
       });
 
-    let url_buy = "http://54.180.183.72:8080/acorn/buy/selectOfBuyOneData?buy_id=" + localStorage.getItem("buy_id");
+    let url_buy = "http://localhost:8080/acorn/buy/selectOfBuyOneData?buy_id=" + localStorage.getItem("buy_id");
     axios.post(url_buy)
       .then((ResponseData) => {
         this.setState({
@@ -193,7 +193,7 @@ class orderSheet extends Component {
                                   <td className="td_left">
                                     <div className="pick_add_cont">
                                       <span className="pick_add_img">
-                                        <img src={"http://54.180.183.72:8080/acorn/image/productImage/" + data.product_img} alt="" />
+                                        <img src={"http://localhost:8080/acorn/image/productImage/" + data.product_img} alt="" />
                                       </span>
                                       <div className="pick_add_info">
                                         <em>
