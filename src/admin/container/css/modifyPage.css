@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+
+
+
+.hr-sect {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20pt;
+  display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	margin: 8px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 16px;
+}
+
+.mypageContent {
+  width: 700px;
+  position: absolute;
+  margin-left: 40%;
+
+}
+
+.productModify_button1{
+	border:1px solid blue;
+	border-radius: 10%;
+	background-color: white;
+	color: blue;
+	height: 36px;
+	width:90px;
+}

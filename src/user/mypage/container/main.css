@@ -1,0 +1,1712 @@
+ol, ul, li, h2, h3
+{
+    list-style: none;
+    text-decoration: none;
+}
+
+em
+{
+    font-weight: bold;
+    font-style: normal;
+}
+
+.btn2{
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-color: black ;
+    border-width: 1px;
+    border-radius: 10%;
+}
+
+.cancle_button{
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    border-radius: 10%;
+    width: 80px;
+}
+
+button
+{
+    cursor: pointer;
+}
+
+.User_mypage_content
+{
+    position: absolute;
+    float: left;
+    width: 1250px;
+    margin: 20px 0 0 300px;
+    /* border: 2px solid #e3e3e3; */
+}
+
+
+/* Main.css */
+.User_mypage_info
+{
+    float: left;
+    /* border: 2px solid #e3e3e3; */
+}
+
+.User_mypage_info li
+{
+    line-height: 50px;
+}
+/* 여기까지 Main.css */
+
+
+
+/* Myinfo.css */
+.user_mypage_topinfo
+{
+    display: table;
+    width: 100%;
+    margin: 0 0 35px 0;
+    border: 2px solid #e3e3e3;
+    background: #f7f9f8;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+.user_mypage_toptxt
+{
+    display: table-cell;
+    width: 30%;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    vertical-align: middle;
+    background: #f7f9f8;
+}
+
+.user_mypage_grade .badge
+{
+    display: table;
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 5px;
+    border-radius: 34px;
+    background: #000;
+    font-size: 14px;
+    text-align: center;
+}
+
+.user_mypage_grade .badge > span
+{
+    display: table-cell;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.user_number_of_purchases
+{
+    display: table-cell;
+    width: 69%;
+    vertical-align: middle;
+    background: #ffffff;
+    margin-left: 20px;
+}
+
+.user_number_of_purchases ul
+{
+    width: 100%;
+    padding: 27px 10px 27px 10px;
+    line-height: 1;
+}
+
+/* :first-child - 첫 속성은 생략한다?? 이런 뜻인거 같음. */
+.user_number_of_purchases ul li:first-child
+{
+    border-left: none 0;
+}
+
+.user_number_of_purchases ul li
+{
+    display: inline-block;
+    width: 33%;
+    font-size: 14px;
+    text-align: center;
+    border-left: 1px solid #e1e3e2;
+}
+
+.user_number_of_purchases ul li em
+{
+    display: block;
+    padding: 15px 0 15px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.user_number_of_purchases ul li span
+{
+    font-size: 14px;
+    display: block;
+    padding: 0 10px 0 10px;
+}
+/* 여기까지 Myinfo.css */
+
+
+
+/* Default.css */
+.user_mypage_latelyinfo
+{
+    margin: 50px 0 0 0;
+}
+
+.latelyinfo_title
+{
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #999999;
+}
+
+.latelyinfo_title h3
+{
+    display: inline-block;
+    font-size: 16px;
+}
+
+.user_mypage_latelyinfo span
+{
+    padding: 0 0 0 5px;
+    color: #777777;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.latelyinfo_cont
+{
+    position: relative;
+    width: 100%;
+}
+
+.item_gallery_type ul
+{
+    width: auto;
+    float: none;
+    margin: 0 -1%;
+    padding: 0 40px 0 40px;
+}
+
+.user_mypage_latelyinfo ul li
+{
+    margin-top: 10px;
+}
+
+.item_gallery_type ul li
+{
+    width: 18%;
+    margin: 50px 1% 0;
+}
+
+.latelyinfo_cont ul li
+{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.item_gallery_type .item_cont
+{
+    text-align: left;
+    color: #1c1c1c;
+}
+
+.item_photo_box
+{
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.item_photo_box > img
+{
+    width: 100%;
+    height: 250px;
+    border: 0 none;
+    vertical-align: top;
+}
+
+
+.item_info_cont
+{
+    display: block;
+    padding: 13px 0 0 0;
+    font-size: 12px;
+    text-align: center;
+    min-height: 112px;
+}
+
+
+.item_tit_box .item_name
+{
+    display: block;
+    padding: 1px 0 0 0;
+    font-size: 13px;
+}
+
+.item_tit_box .item_name_explain
+{
+    display: block;
+    padding: 0 10px 0 0;
+    color: #a8a8a8;
+}
+
+.item_money_box
+{
+    padding: 5px 0 0 0;
+    line-height: 1;
+}
+
+.item_money_box del
+{
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 11px;
+    color: b4b4b4;
+}
+
+.item_money_box .item_price
+{
+    display: inline-block;
+    padding: 0 0 0 0;
+    font-size: 14px;
+    color: #000;
+}
+
+
+.item_money_box .item_mileage
+{
+    display: block;
+    padding: 5px 0 5px 0;
+    line-height: 1.5;
+    background: none;
+}
+
+.item_mileage_ic
+{
+    top: -100px;
+}
+
+
+
+
+
+
+
+
+img
+{
+    width: 200px;
+}
+
+/* 여기까지 Default.css */
+
+
+
+/* SangpumList, CancelList.css */
+.data_check_box
+{
+    margin: 0 0 35px 0;
+    display: block;
+    padding: 20px 20px 20px 20px;
+}
+
+.data_check_box .dateSearch
+{
+    margin-left: 15px;
+}
+
+
+.data_check_list
+{
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+.data_check_list button
+{
+    float: left;
+    width: 80px;
+    height: 50px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.data_check_calendar
+{
+    float: left;
+}
+
+.calendar
+{
+    cursor: pointer;
+}
+
+.data_result_table table
+{
+    width: 100%;
+}
+
+.data_result_table th
+{
+    padding: 9px 10px 10px 10px;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #dbdbdb;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.data_result_table td
+{
+    text-align: center;
+    height: 31px;
+    padding: 15px 10px 14px 10px;
+    color: #777777;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.wishlist_cont_left
+{
+    text-align: left;
+}
+
+.pick_add_cont
+{
+    display: table;
+    position: relative;
+}
+
+.pick_add_img
+{
+    display: table-cell;
+    width : 100px;
+    vertical-align: top;
+}
+
+.pick_add_img img
+{
+    height: auto;
+    border: 1px solid #dbdbdb;
+    vertical-align: middle;
+}
+
+
+.pick_add_info
+{
+    display: table-cell;
+    padding: 0 0 0 10px;
+    vertical-align: middle;
+    word-break: break-all;
+    text-align: left;
+}
+
+.pick_add_info em
+{
+    display: block;
+    color: #333333;
+    font-weight: bold;
+}
+
+
+.data_result_table .no_data
+{
+    height: 31px;
+    padding: 15px 10px 14px 10px;
+    color: #777777;
+    /* border-bottom: 1px solid #dbdbdb; */
+}
+
+.no_data > p
+{
+    padding: 50px 30px 50px 30px;
+    text-align: center;
+}
+
+.list_title_tab
+{
+    padding: 0;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.list_title_tab ul
+{
+    float: none;
+    width: 100%;
+    height: 58px;
+    margin: 0 auto;    
+}
+
+
+.list_title_tab li
+{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+    min-width: 200px;
+}
+
+.list_title_tab div
+{    
+    display: block;
+    margin: 0 0 0 -1px;
+    padding: 10px 20px 10px 20px;
+    color: #999999;
+    border: 1px solid #dadada;
+    border-bottom: 1px solid #bbbbbb;
+    background: #ffffff;
+}
+
+.list_title_tab li.on
+{
+    z-index: 20;
+}
+
+.list_title_tab li.on div
+{
+    padding-top: 18px;
+    margin-top: 8px;
+    color: #333333;
+    font-weight: bold;
+    border-bottom: 1px solid #ffffff;
+    border: 1px solid #bbbbbb;
+}
+/* 여기까지 SangpumList, CancelList.css */
+
+
+/* Cart CSS */
+.cart_title
+{
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.btn_option_change
+{
+    margin: 0;
+    padding: 5px 5px 5px 5px !important;
+    width: 100%;
+}
+
+.btn_option_change span
+{
+    font-size: 10px;
+}
+
+.pick_sang_del, .pick_sang_bookmark
+{
+    width: 130px;
+    height: 50px;
+}
+
+.pick_sang_bookmark
+{
+    left: 30px;
+}
+
+.btn_cart_left_box p
+{
+    float: right;
+    line-height: 22px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.cart_payment
+{
+    margin: 60px 0 !important;
+}
+
+.btn_order_box
+{
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.btn_order_box .button
+{
+    width: 200px;
+    height: 60px;
+    margin-right: 20px;
+    border: 1px solid #000;
+}
+
+.btn_order_box .shopping, .btn_order_box .select_order_buy
+{
+    background: #ffffff;
+}
+
+.btn_order_box em
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* 
+    overflow
+    - visible : 기본값으로 내용이 더 길어도 그대로 보임.(내용이 흘러 넘침)
+    - hidden : 내용이 넘치면 자른다. 자른 부분은 보이지 않는다.
+    - scroll : 내용이 넘치지 않아도 항상 스크롤바가 보인다.
+    - auto : 내용이 잘릴 때만 스크롤바가 보인다.
+*/
+
+
+
+/* InfoChangeFront CSS */
+
+.update_title
+{
+    margin: 0 0 50px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #999999;
+}
+
+.mypage_UpdatePassword p
+{
+    text-align: center;
+}
+
+.id_pw_cont
+{
+    margin: 30px 0 30px 0;
+    padding: 26px 0 24px 0;
+    border: 1px solid #dadada;
+    text-align: center;
+}
+
+.id_pw_cont dl
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 5px 30px 5px 0;
+}
+
+/*
+    vertical-align : inline 또는 table-cell box에서의 수직 정렬을 지정
+*/
+
+
+.id_pw_cont dt 
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 5px 10px 0 0;
+}
+
+.id_pw_cont dd
+{
+    display: inline-block;
+    text-align: left;
+}
+
+.id_pw_cont dd strong
+{
+    display: block;
+    padding: 5px 0 0 0;
+    color: #000;
+}
+
+.password_warning
+{
+    display: inline;
+    position: relative;
+    text-align: left;
+}
+
+#findPassword input[type='password']
+{
+    padding: 0 10px;
+    border: 1px solid #d6d6d6;
+}
+
+.text_warning
+{
+    letter-spacing: -1px;
+    color: #000;
+    text-align: left;
+}
+
+.btn_center_box
+{
+    text-align: center;
+}
+
+.btn_center_box Button
+{
+    padding: 10px 0 10px 0;
+}
+
+.btn_center_box Button[type='submit']
+{
+    margin-left: 10px;
+}
+
+/* 
+.btn_pw_cancel
+{
+    display: inline-block;
+    min-width: 80px;
+    height: 42px;
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 0;
+    line-height: 40px;
+    color: #3e3d3c;
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn_pw_certify
+{
+    min-width: 80px;
+    height: 42px;
+    padding: 0 10px 0 10px;
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #000;
+    background: #000;
+    text-align: center;
+    vertical-align: top;
+}
+*/
+
+
+/* 여기까지 InfoChangeFront */
+
+
+/* Delivery_Layer */
+.delivery_layer, .delivery_content
+{
+    position: relative;
+}
+
+.delivery_layer_title
+{
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+.delivery_layer_title h3, span
+{
+    display: inline-block;
+}
+
+.delivery_table table
+{
+    width: 100%;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;    
+}
+
+
+/*
+    border-spacing : table의 테두리와 td의 테두리 사이 간격 정함.
+    border-collapse : table의 테두리와 td의 테두리 사이 간격을 어떻게 처리할 지 정함.
+    border-collapse 속성 값
+    - separate : 표(table)의 테두리와 셀(td)의 테두리 사이에 간격을 둡니다.
+    - collapse : 표(table)의 테두리와 셀(td)의 테두리 사이의 간격을 없앱니다. 겹치는 부분은 한 줄로 나타냅니다.
+    - initial : 기본값으로 설정합니다.
+    - inherit : 부모 요소의 속성값을 상속받습니다.
+    (속성값이 separate일 때, 간격의 크기는 border-spacing 속성으로 정합니다.)
+
+
+    border-spacing은 border-collapse 속성이 separate일 경우에만 적용.
+
+*/
+
+
+
+.delivery_table th
+{
+    padding: 9px 10px 10px 10px;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #dbdbdb;
+    background: #f7f7f7;
+}
+
+.btn_add_delivery
+{
+    position: absolute;
+    top: -42px;
+    right: 0px;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 28px;
+    color: #fff;
+    border: 1px solid #979797;
+    background: #979797;
+    text-align: center;
+}
+/* 여기까지 Delivery_Layer */
+
+
+
+
+/* Unregister CSS */
+.Unregister_All
+{
+    padding: 0 0 50px 0;
+}
+
+.Unregister_cont
+{
+    margin: 0 0 50px 0;
+}
+
+
+.Unregister_Title
+{
+    margin: 0 0 50px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #999999;
+}
+
+.Unregister_content_Title
+{
+    margin: 0;
+    padding: 0 0 10px 0;
+    border-bottom: none 0;
+}
+
+.Unregister_content_Title h3
+{
+    display: inline-block;
+}
+
+
+.Unregister_info
+{
+    margin: 0 0 40px 0;
+    padding: 15px 15px 15px 15px;
+    color: #717171;
+    border: 1px solid #dadada;
+}
+
+
+.Unregister_table
+{
+    border-top: 1px solid #999999;
+    width: 100%;
+    border: 0;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+.Unregister_table th
+{
+    padding: 15px 10px 14px 20px;
+    border-top: none 0;
+    background: #f7f7f7;
+    text-align: left;
+    border-bottom: 1px solid #dbdbdb;
+    width: 100px;
+}
+
+.Unregister_table td
+{
+    height: 31px;
+    padding: 12px 10px 11px 15px;
+    text-align: left;
+    color: #777777;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.form_element
+{
+    display: inline-block;
+    position: relative;
+}
+
+.Unregister_list li
+{
+    float: left;
+    width: 40%;
+    padding: 0 0 7px 0;
+}
+
+.Unregister_list li > input
+{
+    cursor: pointer;
+}
+
+
+.form_element input
+{
+    /* position: absolute; */
+    top: 3px;
+    left: 1px;
+}
+
+.form_element input[type = "checkbox"]
+{
+    height: 13px;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+.form_element label
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    min-width: 30px;
+    min-height: 20px;
+    padding: 0 27px 0 27px;
+}
+
+.Unregister_table textarea
+{
+    width: 98%;
+    height: 100px;
+    padding: 5px;
+    color: #a9a9a9;
+    border: 1px solid #d6d6d6;
+}
+
+
+.btn_claim_cancel
+{
+    display: inline-block;
+    min-width: 80px;
+    height: 42px;
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 0;
+    line-height: 40px;
+    color: #3e3d3c;
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    text-align: center;
+}
+
+.btn_claim_ok
+{
+    min-width: 80px;
+    height: 42px;
+    padding: 0 10px 0 10px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #000;
+    background: #000;
+    text-align: center;
+    vertical-align: top;
+}
+/* 여기까지 Unregister CSS */
+
+
+
+/* Order CSS */
+.order_content
+{
+    margin: 0;
+    min-width: 400px;
+    padding: 0 0 100px 0;
+}
+
+
+.location_wrap
+{
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.location_cont
+{
+    padding: 0 70px;
+    color: #b4b4b4;
+    text-align: center;
+}
+
+.location_cont span
+{
+    color: #000;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0 4px;
+}
+
+.sub_content
+{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 45px 70px 0 70px;
+}
+
+.order_title
+{
+    overflow: hidden;
+    border-bottom: 1px solid #dbdbdb56;
+}
+
+.order_title h2
+{
+    float: left;
+    font-size: 28px;
+    color: #222222;
+}
+
+.order_title ol
+{
+    float: right;
+    line-height: 62px;
+}
+
+.order_title li
+{
+    float: left;
+    color: #d1d1d1;
+}
+
+.order_title span
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.order_title .page_on
+{
+    color: #000;
+    font-weight: bold;
+}
+
+.cart_cont_list
+{
+    margin: 50px 0 20px 0;
+}
+
+.order_cart_title
+{
+    padding: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.order_table_type table
+{
+    width: 100%;
+    border: 0;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    text-align: center;
+    display: table;
+}
+
+.order_table_type th
+{
+    padding: 14px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #ddd;
+    background: #f6f6f6;
+}
+
+.order_table_type .td_left
+{
+    text-align: left;
+    border-right: 1px solid #eee;
+}
+
+.order_table_type td
+{
+    height: 31px;
+    font-size: 15px;
+    padding: 15px 10px 14px 10px;
+    color: #777777;
+    border-bottom: 1px solid #eee;
+    background: #ffffff;
+}
+
+.order_table_type .pick_add_cont
+{
+    display: table;
+    position: relative;
+    width: 100%;
+}
+
+.order_table_type .pick_add_img
+{
+    display: table-cell;
+    width: 120px;
+    padding: 0 10px 0 0;
+    vertical-align: top;
+}
+
+.order_table_type .pick_add_cont .pick_add_img img
+{
+    border: 1px solid #dbdbdb;
+    vertical-align: middle;
+    min-width: 200px;
+    width: 200px;
+}
+
+.order_table_type .pick_add_info
+{
+    display: table-cell;
+    padding: 0;
+    vertical-align: middle;
+    word-break: break-all;
+}
+
+.order_table_type .pick_add_info em
+{
+    display: block;
+    color: #333333;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.order_table_type .pick_add_cont .pick_option_box
+{
+    width: 100%;
+    padding: 2px 0 0 0;
+}
+
+.order_table_type .pick_add_cont .text_type_cont
+{
+    display: block;
+    padding: 10px 0 3px 0;
+    color: #a9a9a9;
+    line-height: 1;
+    font-size: inherit;
+}
+
+.order_table_type .td_order_amount
+{
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    width: 100px;
+}
+
+.order_table_type .td_order_amount .order_count_num strong
+{
+    display: block;
+    width: 100%;
+    color: #333333;
+}
+
+.btn_option_list
+{
+    margin: 5px 0 0 0;
+    display: inline-block;
+    color: #777777;
+}
+
+.order_pick_price
+{
+    color: #333333;
+    font-size: 18px;
+}
+
+.order_sum
+{
+    color: #333333;
+    font-size: 18px;
+}
+
+
+.td_order_pick_benefit
+{
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+.benefit_list
+{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 90px;
+    text-align: center;
+}
+
+.benefit_mileage
+{
+    margin: 10px 0 0 0;
+    display: inline-block;
+    padding: 0 30px 0 0 ;
+    position: relative;
+    color: #888888;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.benefit_mileage em
+{
+    padding: 0 5px 1px 20px;
+    display: inline-block;
+}
+
+.benefit_mileage span
+{
+    display: block;
+}
+
+.benefit_mileage strong
+{
+    padding: 0 0 0 5px;
+    color: #333333;
+}
+
+.td_order_delivery
+{
+    border-left: 1px solid #eee;
+}
+
+.btn_cart_left_box
+{
+    text-align: left;
+}
+
+.order_price_sum
+{
+    margin: 60px 0;
+    padding: 50px 40px;
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    background: #f6f6f6;
+}
+
+.oderList_detailcheck{
+    background-color: white;
+    border: 1px solid  rgb(69, 173, 173);
+    color:  rgb(69, 173, 173);
+    border-radius: 10%;
+    width: 120px;
+    height: 45px;
+}
+
+.oderList_review{
+    background-color: white;
+    border: 1px solid #f50057;
+    color: #f50057;
+    border-radius: 10%;
+    width: 120px;
+    height: 45px;
+}
+
+.order_price_sum_cont
+{
+    display: table;
+    width: 100%;
+    max-width: 860px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.order_price_sum_cont .price_sum_list
+{
+    position: relative;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.order_price_sum_cont .price_sum_list dl
+{
+    display: table-cell;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.order_price_sum_cont .price_sum_list dd
+{
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.order_price_sum_cont .price_sum_list dd strong
+{
+    font-weight: 700;
+    color: #000;
+}
+
+.order_price_sum_cont .price_sum_list span
+{
+    display: table-cell;
+    padding: 0 15px 0 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.order_view_info h4
+{
+    margin: 50px 0 0 0;
+}
+
+.order_agree
+{
+    margin: 50px 0 0 0;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #dbdbdb;
+}
+
+.order_agree h4
+{
+    margin-top: 0;
+}
+
+
+.order_zone_title
+{
+    margin: 0 0 0 0;
+    padding: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.order_zone_title h4
+{
+    font-size: 16px;
+}
+
+
+.order_agree_cont .agreement_box
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 60px;
+    margin: 0 0 10px 0;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    border-top: 1px solid #999999;
+    line-height: 18px;
+}
+
+.agreement_check
+{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.order_info_title
+{
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.order_info_title h4
+{
+    margin: 50px 0 0 0;
+    font-size: 16px;
+}
+
+.order_info_table_type
+{
+    font-size: 15px;
+}
+
+.order_info_table
+{
+    border-top: 1px solid #999999;
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.order_info_e-mail
+{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.order_payment_sum
+{
+    color: #333333;
+    font-size: 18px;
+}
+
+.payment_info_table
+{
+    border-top: 1px solid #999999;
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+
+.payment_info_mileage
+{
+    color: #777777;
+}
+
+.money_use_sum
+{
+    color: #329cff;
+}
+
+.money_use_txt
+{
+    display: block;
+    padding: 5px 0 0 0;
+    color: #329cff;
+}
+
+.js_pay_content
+{
+    padding: 2px 0 0 0;
+    color: #000;
+    font-size: 12px;
+}
+
+.payment_progress_list
+{
+    padding: 10px 0 10px 0;
+    border-top: 1px solid #999999;
+}
+
+
+.general_payment dl, .escrow_payment dl, .cash_tax_get dl
+{
+    display: block;
+    padding: 20px 0 15px 0;
+    border-bottom: 6px solid #dbdbdb;
+    /* vertical-align: top; */
+    list-style: none;
+}
+
+.general_payment dt, .escrow_payment dt, .cash_tax_get dt
+{
+    display: inline-block;
+    width: 180px;
+    padding: 0 0 0 24px;
+    font-size: 13px;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.general_payment dd, .escrow_payment dd, .cash_tax_get dd
+{
+    min-width: 520px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.payment_radio
+{
+    top: -10px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.payment_radio_group
+{
+    display: inline-block !important;
+}
+
+
+.payment_radio .payment_progress_select
+{
+    padding: 0;
+    margin: 0;
+}
+
+.settlekindType_gb
+{
+    display: inline-block;
+    margin: 0 30px 0 0;
+    font-size: 12px;
+}
+
+.payment_progress_select li
+{
+    text-align: left;
+}
+
+.pay_bankbook_box
+{
+    display: block;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    border-top: 1px dotted #dbdbdb;
+}
+
+.pay_bankbook_txt
+{
+    color: #777777;
+}
+
+
+.cash_receipt_box
+{
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+
+.cash_receipt_box .payment_progress_select
+{
+    display: block;
+    padding: 0 0 20px 24px;
+    border-bottom: 1px dotted #dbdbdb;
+}
+
+.cash_receipt_box .certNoHp, .certNoBno
+{
+    display: block;
+    padding: 20px 0 0 0;
+    border-bottom: none 0;
+}
+
+.cash_receipt_list dt
+{
+    display: inline-block;
+    width: 117px;
+    padding: 5px 0 0 24px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cash_receipt_list dd
+{
+    display: inline-block;
+    font-size: 12px;
+}
+
+
+.tax_invoice_box
+{
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.tax_invoice_box
+{
+    width: 800px;
+    border-top: none 0;
+    border: 0;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.textfield
+{
+    width: 100%;
+}
+
+.table_th
+{
+    width: 100px;
+}
+
+.input_td
+{
+    width: 200px;
+}
+
+.btn_post_search
+{
+    top: 20px;
+    width: 110px;
+}
+
+
+.payment_final
+{
+    margin: 30px 0 0 0;
+}
+
+.payment_final_total
+{
+    padding: 13px 46px 20px 0;
+    border: 2px solid #d6d6d6;
+    text-align: right;
+}
+
+.payment_final_total dl
+{
+    display: inline-block;
+}
+
+.payment_final_total dt
+{
+    display: inline-block;
+    padding: 0 15px 0 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.payment_final_total dd
+{
+    display: inline-block;
+    font-size: 30px;
+    color: #000;
+}
+
+.payment_final_check
+{
+    padding: 30px 0 20px 0;
+    text-align: center;
+}
+
+.payment_final_check label
+{
+    display: inline-block;
+    min-width: 13px;
+    min-height: 20px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.payment_final_check em b
+{
+    color: #000;
+}
+
+.btn_center_box .btn_order_buy
+{
+    display: inline-block;
+    width: 300px;
+    height: 61px;
+    color: #fff;
+    background: #000;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn_order_buy
+{
+    font-weight: bold;
+}
+
+
+
+/* OrderDetail CSS */
+.order_detail
+{
+    clear: both;
+    min-height: 500px;
+    padding: 0 90px;
+    box-sizing: border-box;
+    position: relative;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.order_detail_title
+{
+    overflow: hidden;
+    border-bottom: 1px solid #dbdbdb56;
+    font: 12px "돋움", Dotum, sans-serif;
+}
+
+
+.order_detail_title h2
+{
+    text-align: center;
+    font-size: 28px;
+    color: #222222;
+}
+
+.order_detail_th
+{
+    width: 200px;
+}
+
+.pay_with_list ul
+{
+    padding: 0;
+}
+
+
+
+
+/* noworder css */
+.order_buy_price
+{
+    color: #333333;
+    font-size: 18px;
+}
+
+.noworder_product_cont
+{
+    text-align: left;
+}
+
+.user_buy_order_id
+{
+    cursor: pointer;
+}
+
+.noworder_buy_order_id, .noworder_product_cont, .noworder_buy_price
+{
+    border-right: 1px solid #eee;
+}
+
+.noworder_buy_cancle
+{
+    border-left: 1px solid #eee;
+}
+
+.orderList_btn
+{
+    border-left: 1px solid #eee;
+}
+
+.cakeviewbtn
+{
+    width: 60%;
+}
+
+.orderdelete
+{
+    width:  60%;
+}
+
+.orderDetail
+{
+    width: 90%;
+}
+
+
+.orderNum
+{
+    cursor: pointer;
+}
+
+
+
+.option_lettering
+{
+    margin: 0;
+    display: inline-block;
+    padding: 0 ;
+    position: relative;
+    color: #888888;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.btn_wishlist_box
+{
+    margin-top: 20px;
+}
+
+.wishlist_no > input
+{
+    cursor: pointer;
+}

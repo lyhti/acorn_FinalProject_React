@@ -1,0 +1,131 @@
+
+.faq_contents .accodian_wrap .accodian_list .accodian_content {
+  margin-top: 20px;
+  padding-bottom: 25px;
+  margin-left: 50px;
+  width:1200px;
+}
+
+.faq_contents .accodian_wrap .accodian_list .accodian_content .faq_detail {
+  color: #3a3a3a;
+  list-style: none;
+  box-sizing: border-box;
+  letter-spacing: -.5px;
+  outline-width: 1px;
+  display: block;
+  padding: 35px 30px;
+  background: #eee;
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 300;
+  text-align: left;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.faq_contents .accodian_wrap .accodian_list .accodian_content .faq_detail .q {
+  color: #3a3a3a;
+  list-style: none;
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -.5px;
+  outline-width: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.faq_contents .accodian_wrap .accodian_list .accodian_content .faq_detail .a {
+  color: #3a3a3a;
+  list-style: none;
+  font-weight: 300;
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -.5px;
+  outline-width: 1px;
+  border-top: #fff 1px solid;
+  position: relative;
+  margin-top: 15px;
+  padding-top: 15px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.accodian_list {
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a3a3a;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -.5px;
+  outline-width: 1px;
+  border-top: none;
+ 
+}
+
+.accodian_content {
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a3a3a;
+  list-style: none;
+  letter-spacing: -.5px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding-bottom: 25px;
+  display: block;
+}
+
+.faq_detail {
+  color: #3a3a3a;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -.5px;
+  outline-width: 1px;
+  display: block;
+  padding: 35px 30px;
+  background: #eee;
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 300;
+  text-align: left;
+  border-radius: 5px;
+}
+.faq_contents .accodian_wrap .accodian_list .accodian_content .faq_detail .q {
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.any_title {
+  line-height: 16px;
+  color: #3a3a3a;
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: -.5px;
+  outline-width: 1px;
+  padding: 20px 10px 25px;
+  text-align: left;
+  font-weight: 200;
+}
+
+ .any_title .pri {
+  color: #3a3a3a;
+  letter-spacing: -.5px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 19px;
+  font-weight: 700;
+  padding: 0 5px 20px;
+  line-height: 30px;
+  text-align: left;
+  margin-left: 17%;
+  border-bottom: solid 1px #3a3a3a;
+  width: 140px;
+  margin-top: 20px;
+}

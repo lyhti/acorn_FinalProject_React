@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+.logoStyle  {
+  margin: 0;
+  font-family: 'Luckiest Guy', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: top;
+  display: flex;
+  justify-content: flex-start;
+  /* background-color:'#81acb3'; */
+  font-size: 55pt;
+  /* margin-right: 50px; */
+  margin-bottom: 40px;
+  line-height: 1;
+  width: 400px;
+  margin-top: -20px;
+} 
+
+/* 메인 카테고리 폰트 스타일 */
+.cateStyle {
+  margin: 0;
+  justify-content: flex-end;
+  font-family: 'Noto Sans KR', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+  font-size: 17px;
+  margin-left: 70px;
+  margin-top: 27px;
+  cursor: pointer;
+}
+
+/* 카테고리 hover*/
+.cateStyle:hover {
+  color: #A9C9CE;
+}
+.cateStyle:active, .sideBtn:active {
+  color: #3C99B7;
+}
+
+/* 전체적인 폰트스타일 */
+.wholeStyle  {
+  margin: 0;
+  font-family: 'Poor Story', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+} 
+
+/* 로그인 회원가입 고객센터 스타일 */
+.sideStyle {
+  /* width: 1400px; */
+  display: flex;
+  /* justify-content: flex-end; */
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 1470px;
+  margin-top: 10px;
+  height: 20px;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.sideBtn {
+  color:black;
+  font-family: 'Noto Sans KR', sans-serif;
+  color:#7a7a7a;
+  font-size: 11pt;
+  /* font-weight: normal; */
+  font-style: normal;
+  text-decoration: none;
+
+}
+.sideBtn:hover {
+  color: #A9C9CE;
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+.User_mypage_info {
+  float: left;
+  width: 250px;
+  height: 500px;;
+  max-width: 360;
+  position: fixed;
+  left: 0px;
+  top:calc(30%-25px);
+ 
+}
+.mypageTitle {
+
+  margin: 15px auto 10px 40px;
+}
+
+.mypageTitle b{
+  font-family: 'Saira Condensed', sans-serif;
+  color:black;
+  font-size: 15pt;
+}
+
+.mypageListName span{
+  font-family: 'Nanum Gothic', sans-serif;
+  color:black;
+  margin-left: 10px;
+}
+.mypageListName span:hover{
+  color: #3C99B7;
+
+}
+
+.mypageListName li {
+  width: 100%;
+}
+
+.mypageSubTitle > li
+{
+  cursor: pointer;
+}

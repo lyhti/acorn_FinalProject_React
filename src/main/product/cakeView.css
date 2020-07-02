@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+
+.cakeView_candle1{
+    border: 0px solid black;
+    height: 340px;
+    width: 1000px;
+    margin-left: 24%;
+    padding-top: 2%;
+}
+
+.cakeView_candle2{
+    height: 150px;
+    width: 150px;
+    border: 0px solid black;
+    margin-top: 5%;
+    border-radius:25% ;
+ 
+    float: left;
+}
+
+.cakeView_candle3{
+    height: 30px;
+    width: 100px;
+    border: 0px solid black;
+    margin-left: 2%;
+    font-family: 'Poor Story', cursive;
+    color: #45adad;
+}
+.cakeView_candle4{
+    height: 150px;
+    width: 150px;
+    border: 0px solid black;
+    margin-top: 4%;
+    border-radius:25% ;
+    margin-left: 25%;
+    float: left;
+}
+
+.cakeView_candle5{
+    height: 30px;
+    width: 150px;
+    border: 0px solid black;
+    margin-left: 40%;
+    font-family: 'Poor Story', cursive;
+    color: #45adad;
+}
+
+
+.cakeView_candle6{
+    height: 150px;
+    width: 150px;
+    border: 0px solid black;
+    margin-top: 5%;
+    border-radius:25% ;
+    margin-left: 25%;
+    float: left;
+}
+
+.cakeView_candle7{
+    height: 150px;
+    width: 150px;
+    border: 0px solid black;
+    margin-top: -7%;
+    border-radius:25% ;
+    margin-left: 20%;
+    float: left;
+}
+
+.cakeView_candle8{
+    height: 150px;
+    width: 150px;
+    border: 0px solid black;
+    margin-top: -7%;
+    border-radius:25% ;
+    margin-left: 27%;
+    float: left;
+}
+
+.cakeView_candle9{
+    height: 30px;
+    width: 150px;
+    border: 0px solid black;
+    margin-left: 20%;
+    font-family: 'Poor Story', cursive;
+    color: #45adad;
+}
+
+.cakeView_candle10{
+    height: 30px;
+    width: 150px;
+    border: 0px solid black;
+    margin-left: 62%;
+    font-family: 'Poor Story', cursive;
+    color: #45adad;
+}
+
+.cakeView_candle11{
+    height: 30px;
+    width: 150px;
+    border: 0px solid black;
+    margin-left: 80%;
+    font-family: 'Poor Story', cursive;
+    color: #45adad;
+}
+
+
+.candle{
+    width: 280px;
+}
+
+.cakeView_modify_button{
+ border:1px solid #f50057;
+ border-radius: 10%;
+ background-color: white;
+ color: #f50057;
+ height: 36px;
+ width:90px;
+}
+
+
+
+.cakeView_catagory
+{
+    font-family: 'Poor Story', cursive;
+    font-size: 18px;
+    color:  lightgray;
+    float: right;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    height: 10px;
+}
+
+.cakeView_div1{
+    font-family: 'Poor Story', cursive;
+}
+
+.cakeView_div12
+{
+    margin: 0 0 0 0;
+    padding: 0;
+    font-family: 'Poor Story', cursive;
+    width: 100%;
+}
+
+.previewText{
+    font-family: 'Poor Story', cursive;
+}
+
+.candle_td{
+    margin-top: 100px;
+}
+
+.box1{
+    padding: 0px;
+}
+
+.cakeView_table{
+    margin-top: 10%;
+    
+}
+
+.cakeview_img{
+    width: 450px;
+    height:515px;
+    margin-Right:10px;
+    border-radius: 2%;
+}
+
+.reviewViewPage_table
+{
+    float: left;
+    text-align: center; 
+    margin-left: 26%;
+ 
+}
+
+.reviewViewPage_td1{
+    border-color:   #e3e3e3;
+   border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    text-align: center;
+    width: 100px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    font-family: 'Poor Story', cursive;
+}
+.reviewViewPage_td2{
+    border-color:   #e3e3e3;
+   border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    text-align: left;
+    width: 400px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    font-family: 'Poor Story', cursive;
+}
+.reviewViewPage_td3{
+    border-color:   #e3e3e3;
+   border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    text-align: center;
+    width: 150px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    font-family: 'Poor Story', cursive;
+}
+.reviewViewPage_td4{
+    border-color:   #e3e3e3;
+   border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    text-align: center;
+    width: 150px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+   
+}
+.reviewViewPage_td5{
+
+    text-align: center;
+    width: 150px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    
+}
+
+.reviewViewPage_tr6{
+    font-size: 30px;
+    text-align: left;
+    padding-left:30px;
+    font-family: 'Poor Story', cursive;
+    
+}
+
+.reviewViewPage_tdTop{
+    border-color:   #e3e3e3;
+   border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    text-align: center;
+    padding-bottom: 15px;
+  
+}
+
+.cakeView_P{
+    font-size:17px;
+     margin:0px;
+     font-family: 'Poor Story', cursive;
+     
+}
+
+.reviewViewPage_Nottd{
+    border-color:   #e3e3e3;
+   border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    width: 940px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    font-family: 'Poor Story', cursive;
+    text-align: center;
+    font-size: 20px;
+}

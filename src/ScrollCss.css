@@ -1,0 +1,22 @@
+  .scroll-to-top {
+    position: fixed;
+    bottom: 3rem;   /* 화면 바닥에서 얼마나 떨어져 있는가 */
+    right: 3rem;    /* 화면 오른쪽에서 얼마나 떨어져 있는가 */
+    animation: fadeIn 700ms ease-in-out 1s both;
+    cursor: pointer;
+  }
+
+  .scrollImg
+  {
+    margin-left : -20px;
+    width: 100px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
