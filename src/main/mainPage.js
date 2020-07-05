@@ -20,10 +20,13 @@ import Qna from '../user/mypage/qna.js';
 import '../styles/css/fontStyle.css';
 import '../styles/css/componentStyle.css';
 
-class MainPage extends Component {
-  constructor() {
+class MainPage extends Component
+{
+  constructor()
+  {
     super();
-    this.state = {
+    this.state =
+    {
       search: "",
       user_id: "",
       member_type: "",
@@ -34,7 +37,8 @@ class MainPage extends Component {
   }
 
   // 검색창 엔터 누를 시  검색 결과 state에 저장하고 메인 사진 안보이게 하기
-  onSearchPress = (e) => {
+  onSearchPress = (e) =>
+  {
     localStorage.removeItem("search");
     if (e.key === "Enter" && e.target.value !== "") {
       localStorage.setItem("search", e.target.value);
