@@ -141,9 +141,11 @@ class UserJoin extends Component {
       }).catch(err => {
         console.log("데이터 추가 오류:" + err);
       })
-
-      // 아래 기능은 회원가입 버튼 누르면 바로 메인 페이지로 가는 것.. 
-      window.location = '/Mo_kyeonny/login';
+      setTimeout(() =>
+      {
+        // 아래 기능은 회원가입 버튼 누르면 바로 메인 페이지로 가는 것.. 
+        window.location = '/Mo_kyeonny/login';
+      }, 1500)
     }
   }
 
